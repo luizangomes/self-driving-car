@@ -5,3 +5,4 @@ Based on: ![Self-Driving Car with JavaScript Course – Neural Networks and Mach
 2. Defining the road
 3. Artificial sensors
 4. Collision detection
+5. Simulating traffic
