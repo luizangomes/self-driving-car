@@ -23,7 +23,7 @@ class Road {
 
   getLaneCenter(laneIndex){
     const laneWidth = this.width/this.laneCount;
-    return this.left+laneWidth/2 + Math.min(laneIndex,this.laneCount)*laneWidth;
+    return (this.left+laneWidth/2) + (Math.min(laneIndex, this.laneCount - 1)*laneWidth);
   }
 
   draw(ctx){
@@ -50,9 +50,4 @@ class Road {
       ctx.stroke();
     })
   }
-}
-
-//Linear interpolation 
-function lerp(A, B, t){
-  return A + (B - A)*t;
 }
